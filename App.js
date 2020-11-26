@@ -9,6 +9,7 @@ import MaterialIconsIcon from "react-native-vector-icons/MaterialIcons";
 import { createAppContainer ,createSwitchNavigator } from 'react-navigation';
 
 
+
 import Splash from './src/Splash';
 import LandingScreen from './src/Landing';
 import BlogScreen from './src/Blog';
