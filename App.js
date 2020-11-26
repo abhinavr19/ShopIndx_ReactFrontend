@@ -14,7 +14,7 @@ import LandingScreen from './src/Landing';
 import BlogScreen from './src/Blog';
 import BlogScreenAmazon from './src/BlogAmazon';
 import BlogScreenFlipkart from './src/BlogFlipkart';
-import BlogScreenebay from './src/Blogebay';
+import BlogScreenPaytm from './src/BlogPaytm';
 import BlogScreenMyntra from './src/BlogMyntra';
 import MainTabNavigator from './src/MainTabNavigator';
 
@@ -64,10 +64,10 @@ const stackNavigator = createStackNavigator(
           },
       }),
     },
-    BlogAmazonebay: {
-      screen: BlogScreenebay,
+    BlogPaytm: {
+      screen: BlogScreenPaytm,
       navigationOptions: () => ({
-        title: "eBay",
+        title: "Paytm Mall",
          headerShown: true,
         headerStyle: {  
           backgroundColor: "#ae7bb6",            

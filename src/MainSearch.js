@@ -5,12 +5,12 @@ import { createBottomTabNavigator } from 'react-navigation-tabs';
 
 import HomeScreen from './Home';
 import SearchScreen from './Search';
-import ProfileScreen from './Profile';
+import BookmarkScreen from './Bookmark';
 
 
-const iconHome = require('../assets/tabbar/profilemain.png');
-const iconSearch = require('../assets/tabbar/search.png');
-const iconProfile = require('../assets/tabbar/profile.png');
+const iconHome = require('../assets/tabbar/home1.png');
+const iconOffer = require('../assets/tabbar/offer.png');
+const iconBookmark = require('../assets/tabbar/bookmark.png');
 
 const styles = StyleSheet.create({
   tabBarItemContainer: {
@@ -22,11 +22,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   tabBarIcon: {
-    width: 25,
-    height: 25,
-  },
-  tabBarIconFocused: {
-    tintColor: "#000"
+    width: 30,
+    height: 30,
   },
 
   headerContainer: {
@@ -64,8 +61,8 @@ export default createBottomTabNavigator(
         header: null,
       },
     },
-    Profile: {
-      screen: ProfileScreen,
+    Bookmark: {
+      screen: BookmarkScreen,
       navigationOptions: {
         header: null,
       },
@@ -82,10 +79,10 @@ export default createBottomTabNavigator(
             iconSource = iconHome;
             break;
           case 'Search':
-            iconSource = iconSearch;
+            iconSource = iconOffer;
             break;
-          case 'Profile':
-            iconSource = iconProfile;
+          case 'Bookmark':
+            iconSource = iconBookmark;
             break;
           default:
             iconSource = iconHome;
@@ -105,19 +102,18 @@ export default createBottomTabNavigator(
     animationEnabled: true,
     swipeEnabled: true,
     tabBarOptions: {
-      activeTintColor:'#000',
+      activeTintColor:'#d3d3d3',
       inactiveTintColor:'#a9a9a9',
-      showLabel: true,
+      showLabel: false,
       style: {
         backgroundColor: "#fff",
         borderTopWidth: 1.5,
-        borderTopColor: '#000',
-        height:55,
+        borderTopColor: '#ae7bb6',
       },
       labelStyle: {
-        color: "#a9a9a9",
+        color: "#000",
         fontWeight: "bold",        
-        fontSize: 14,
+        fontSize: 12,
       },
     },
   },

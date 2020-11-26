@@ -20,7 +20,7 @@ import {
 
 import {WebView} from 'react-native-webview';
 
-export default class BlogScreenebay extends Component {
+export default class BlogScreenPaytm extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -35,7 +35,7 @@ export default class BlogScreenebay extends Component {
     return (
        <View style={styles.view}>
          <WebView
-          source={{uri: 'https://www.ebay.com/'}}
+          source={{uri: 'https://paytmmall.com/'}}
           style={styles.view}
         />
        </View>
